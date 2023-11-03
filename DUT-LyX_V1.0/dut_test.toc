@@ -1,0 +1,75 @@
+\hypersetup {hidelinks}
+\babel@toc {nil}{}\relax 
+\contentsline {chapter}{摘~~~~~~要}{I}{chapter*.1}%
+\contentsline {chapter}{ABSTRACT}{III}{chapter*.2}%
+\contentsline {chapter}{TABLE OF CONTENTS}{VII}{chapter*.4}%
+\contentsline {chapter}{图~目~录}{IX}{chapter*.5}%
+\contentsline {chapter}{表~目~录}{XI}{chapter*.6}%
+\contentsline {chapter}{主要符号表}{XIII}{chapter*.7}%
+\contentsline {chapter}{\numberline {1\hspace {.3em}}\LyX 介绍}{1}{chapter.1}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1.1}为何\LyX }{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}如何 \LyX }{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}安装Texlive}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}安装LyX}{1}{subsection.1.2.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1.3}如何获得DUT-\LyX 模板}{2}{section.1.3}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1.4}DUT-\LyX 模板介绍}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {2\hspace {.3em}}使用技巧和格式模板}{3}{chapter.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {2.1}菜单和导航}{3}{section.2.1}%
+\babel@toc {english}{}\relax 
+\contentsline {subsection}{\numberline {2.1.1}新建\LyX 文件}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}使用Lyx帮助文档}{4}{subsection.2.1.2}%
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {2.2}插图浮动项}{4}{section.2.2}%
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {2.3}公式}{5}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Tips}{5}{subsection.2.3.1}%
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {2.4}标签和引用}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}添加标签}{7}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}引用标签}{7}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}程序代码}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}超链接}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}选择字号}{10}{section.2.7}%
+\contentsline {section}{\numberline {2.8}特殊章节}{10}{section.2.8}%
+\contentsline {section}{\numberline {2.9}更多技巧}{10}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}使用分支}{10}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}编辑图片}{10}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}即时预览}{11}{subsection.2.9.3}%
+\contentsline {section}{\numberline {2.10}tex转换为lyx}{11}{section.2.10}%
+\contentsline {chapter}{\numberline {3\hspace {.3em}}常见问题和解决方法}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}语言问题}{13}{section.3.1}%
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {3.2}超链接问题}{13}{section.3.2}%
+\contentsline {chapter}{参考文献}{15}{chapter*.16}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}修改记录}{17}{appendix.A}%
+\contentsline {section}{\numberline {A.1}运行测试}{17}{section.A.1}%
+\contentsline {section}{\numberline {A.2}功能完善}{17}{section.A.2}%
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}未来计划}{19}{appendix.B}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {B.1}v2.0.0计划}{19}{section.B.1}%
+\contentsline {section}{\numberline {B.2}v3.0.0计划}{19}{section.B.2}%
+\babel@toc {nil}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{攻读博士学位期间科研项目及科研成果}{21}{appendix*.19}%
+\contentsline {chapter}{致\hskip 2em\relax {}谢}{23}{appendix*.20}%
+\contentsline {chapter}{作者简介}{25}{appendix*.21}%
+\contentsfinish 

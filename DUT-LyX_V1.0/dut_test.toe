@@ -1,0 +1,30 @@
+\hypersetup {hidelinks}
+\contentsline {chapter}{Abstract}{I}{chapter*.1}%
+\contentsline {chapter}{Table of Contents}{VI}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{IX}{chapter*.5}%
+\contentsline {chapter}{List of Tables}{XI}{chapter*.6}%
+\contentsline {chapter}{List of Symbols}{XIII}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Why \LyX }{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}How \LyX }{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Installation of Texlive}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Installation of LyX}{1}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}How to get DUT-\LyX }{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Tips and Formatting Templates}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Menu and Guide}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Building a New File}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Use Help Files}{4}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Insert Floats}{4}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Common Problems and Solutions}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Language Problem}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Super Link Problem}{13}{section.3.2}%
+\contentsline {chapter}{References}{15}{chapter*.16}%
+\contentsline {chapter}{\numberline {A}Revision Records}{17}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Running Tests}{17}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Functionality \foreignlanguage {english}{Improvement}}{17}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Future Plan}{19}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Plan of V2}{19}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Plan of V3}{19}{section.B.2}%
+\contentsline {chapter}{Achievements }{21}{appendix*.19}%
+\contentsline {chapter}{Acknowledgments}{23}{appendix*.20}%
+\contentsline {chapter}{CV}{25}{appendix*.21}%

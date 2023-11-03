@@ -1,0 +1,395 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ../dutthesis
+\begin_preamble
+
+\end_preamble
+\use_default_options false
+\begin_modules
+bicaption
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package babel
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk fs
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\SpecialChar LyX
+介绍
+\end_layout
+
+\begin_layout 英文章
+
+\lang english
+Introduction
+\end_layout
+
+\begin_layout Section
+为何\SpecialChar LyX
+
+\end_layout
+
+\begin_layout 英文节
+Why \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Subsubsection*
+\SpecialChar LyX
+ 优点： 
+\end_layout
+
+\begin_layout Enumerate
+可视化地编辑Tex
+\end_layout
+
+\begin_layout Enumerate
+与latex一样，可以结构化包含文档。并且编辑器提供的目录、导航、标签等功能，可以快速方便地定位、显示内容。编撰比较大的工程，例如书籍类工程，
+ 这个功能会很重要
+\end_layout
+
+\begin_layout Enumerate
+存在与word类似的修订模式，方便多人编辑
+\end_layout
+
+\begin_layout Enumerate
+方便的自动编译过程，只需要一次按键即可
+\end_layout
+
+\begin_layout Enumerate
+内部许多文件转换器，支持较多的文件格式
+\end_layout
+
+\begin_layout Enumerate
+与其他工具有很好的接口（Jabref， Inkscape，Zotero）
+\end_layout
+
+\begin_layout Section
+如何 \SpecialChar LyX
+
+\end_layout
+
+\begin_layout 英文节
+How \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Subsection
+安装Texlive
+\end_layout
+
+\begin_layout 英文子节
+Installation of Texlive
+\end_layout
+
+\begin_layout Standard
+参考官网
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.tug.org/texlive/
+\end_layout
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Subsection
+安装LyX
+\end_layout
+
+\begin_layout 英文子节
+Installation of LyX
+\end_layout
+
+\begin_layout Standard
+到Lyx官方网站下载最新的LyX版本。必须先装好Texlive，安装后，Lyx会自动识别tex目录，并进行配置。Lyx 官方网站：
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.lyx.org/
+\end_layout
+
+\end_inset
+
+ 。
+\end_layout
+
+\begin_layout Standard
+安装后可能出现的问题：打开LyX文档时，LyX提示“Unavailable class”错误。在LyX中打开“Document | Settings”对话框，发
+现列表中绝大多数“Classes”均标记为“Unavailable”，说明LyX没有正确地识别MacTex的安装路径。在LyX中执行“Tools|Reconfi
+gure”，重新打开LyX后仍然不能解决此问题。在LyX中执行“Tools|Reconfigure”所耗费的时间极短，说明LyX可能并没有完成“Reconfig
+ure”。
+\end_layout
+
+\begin_layout Standard
+解决方案：在Terminal中启动LyX（即在Terminal中输入/Applications/LyX.app/Contents/MacOS/lyx），然后在Ly
+X中执行“Tools|Reconfigure”（耗费时间较长），重新打开LyX后一切正常。 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+官网下载慢，可选中国科大的镜像：
+\end_layout
+
+\begin_layout Itemize
+Windows系统： http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-windows.
+exe
+\end_layout
+
+\begin_layout Itemize
+其他系统： http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+如何获得DUT-\SpecialChar LyX
+模板
+\end_layout
+
+\begin_layout 英文节
+How to get DUT-\SpecialChar LyX
+
+\end_layout
+
+\begin_layout Standard
+本项目已发布到GitHub，网址：
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/dutLQG/DUT-LyX
+\end_layout
+
+\end_inset
+
+，目前未开放。
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../figures/DUT-name.pdf
+	lyxscale 80
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Bicaption
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+大工logo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+大连理工大学logo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+DUT LOGO
+\end_layout
+
+\end_inset
+
+
+\lang chinese-simplified
+LOGO
+\lang english
+ of Dalian university of technology
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\lang english
+Note
+\series default
+: Multilingual captions cannot be used for longtables.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DUT-\SpecialChar LyX
+模板介绍
+\end_layout
+
+\begin_layout Standard
+分几部分
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{\ensuremath{\omega^{2}+\sqrt{1+\beta}}}\label{eq:运动方程}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

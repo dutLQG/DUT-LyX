@@ -1,0 +1,112 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[a4paper,twoside,nohide,fontset=macnew]{dutthesis}
+\usepackage{fontspec}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{color}
+\definecolor{note_fontcolor}{rgb}{0.800781, 0.800781, 0.800781}
+\usepackage{babel}
+\usepackage{array}
+\usepackage{prettyref}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\pdfpageheight\paperheight
+\pdfpagewidth\paperwidth
+
+\providecommand{\LyX}{\texorpdfstring%
+  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+\DeclareRobustCommand*{\lyxarrow}{%
+\@ifstar
+{\leavevmode\,$\triangleleft$\,\allowbreak}
+{\leavevmode\,$\triangleright$\,\allowbreak}}
+\providecommand\textquotedblplain{%
+  \bgroup\addfontfeatures{Mapping=}\char34\egroup}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% The greyedout annotation environment
+\newenvironment{lyxgreyedout}
+  {\textcolor{note_fontcolor}\bgroup\ignorespaces}
+  {\ignorespacesafterend\egroup}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxcode}
+	{\par\begin{list}{}{
+		\setlength{\rightmargin}{\leftmargin}
+		\setlength{\listparindent}{0pt}% needed for AMS classes
+		\raggedright
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{0pt}
+		\normalfont\ttfamily}%
+	 \item[]}
+	{\end{list}}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\usepackage{listings}
+\addto\captionsenglish{\renewcommand{\lstlistingname}{Listing}}
+\addto\captions{\renewcommand{\lstlistingname}{程序列表}}
+\renewcommand{\lstlistingname}{程序列表}
+
+\begin{document}
+\title{金属屈服阻尼器设计方法研究}
+\englishtitle{Study of Design Methods of Metal Dampers}
+\author{张三丰}
+\studentnumber{128000001}
+\advisor{李四\quad{}教授}
+\major{土木工程}
+\defenddate{2028年1月1日}
+\degree{博士}
+\maketitle
+
+\makeDeclareOriginal{\qquad{}本人郑重声明：所呈交的学位论文，是本人在导师的指导下，独立进行研究工作所取得的成果。}{}
+
+\frontmatter{}
+
+\include{chapters/abstract}
+
+\DUTtableofcontents{目\qquad{}录}{}
+
+\DUTtableofengcontents{TABLE OF CONTENTS}{}
+
+\DUTlistoffigures{图~~目~~录}{}
+
+\DUTlistoftables{表~~目~~录}{}
+
+\include{chapters/symbols}
+
+\mainmatter{}
+
+\include{chapters/chap1}\include{chapters/Skills}
+
+\bibliographystyle{reference/GBT7714-2005NLang}
+\bibliography{reference/Ref}
+
+
+\setappendix{附录}{}
+
+\include{chapters/Appendix}\include{chapters/Appendix1}
+
+\backmatter{}
+
+\include{chapters/Publication}
+
+\include{chapters/thanks}
+
+\include{chapters/author}
+\end{document}
