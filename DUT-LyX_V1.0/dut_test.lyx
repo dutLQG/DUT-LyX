@@ -7,6 +7,7 @@
 \textclass dutthesis
 \options nohide,twoside
 \use_default_options false
+\master dut_test.lyx
 \begin_modules
 bicaption
 \end_modules
@@ -158,16 +159,25 @@ status open
 \end_layout
 
 \begin_layout Itemize
+单独编译某一章节也可编译pdf，若需要章节序号正常编号，需要设置该文档的默认主文档为dut_test.lyx，这样每一个章节的文档都需要设置其默认主文档为dut_
+test.lyx才能保证编译每一个章节时编号正确；附录单独编译标题是Appendix，因为其标题名在主文档运行才能更新（单独编译章节的序号是否正常不重要，最后在主
+文档编译全文肯定都是正常的）;
+\end_layout
+
+\begin_layout Itemize
 软件如果崩溃重新打开后可选择备份版本，保险方法还是经常保存；
 \end_layout
 
 \begin_layout Itemize
-编译pdf的有些字体显示效果跟系统平台有关，主要是字体库调用不同，文档类中fontset=可设置为windows, mac等，编译提示缺少对应字体自行下载安装到
-电脑中；
+fonts文件夹内的字体建议都装上，windows以管理员身份安装，如果有些标题字体没加粗试试增加文档类选项AutoFakeBold=2；
 \end_layout
 
 \begin_layout Itemize
-本模板主要测试在mac环境中进行，windows如有相关问题可反馈给模板作者：LQG@dlut.edu.cn；
+模板不定期更新，有问题及时反馈到https://github.com/dutLQG/DUT-LyX；
+\end_layout
+
+\begin_layout Itemize
+其他问题：掌握LyX与LaTeX基本知识后可能就不是问题了；
 \end_layout
 
 \end_deeper
