@@ -5,7 +5,7 @@
 \save_transient_properties true
 \origin unavailable
 \textclass dutthesis
-\options nohide,twoside,fontset=mac
+\options nohide,twoside
 \use_default_options false
 \begin_modules
 bicaption
