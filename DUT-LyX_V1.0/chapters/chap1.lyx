@@ -9,6 +9,7 @@
 
 \end_preamble
 \use_default_options false
+\master ../dut_test.lyx
 \begin_modules
 bicaption
 \end_modules
