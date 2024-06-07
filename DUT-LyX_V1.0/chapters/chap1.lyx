@@ -163,6 +163,10 @@ How \SpecialChar LyX
 Installation of Texlive
 \end_layout
 
+\begin_layout Subsubsection
+自行安装
+\end_layout
+
 \begin_layout Standard
 参考官网
 \begin_inset Flex URL
@@ -175,7 +179,15 @@ https://www.tug.org/texlive/
 
 \end_inset
 
-。
+。试试参考文献
+\begin_inset CommandInset citation
+LatexCommand citep
+key "木田2010"
+literal "false"
+
+\end_inset
+
+。実大加振実験に基づく同調粘性マスダンパーの解析モデルに関する検証
 \end_layout
 
 \begin_layout Subsection
@@ -272,7 +284,17 @@ https://github.com/dutLQG/DUT-LyX
 
 \end_inset
 
-，目前未开放。
+，已开放。大连理工大学logo如图
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig1.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+所示。
 \end_layout
 
 \begin_layout Standard
@@ -302,14 +324,10 @@ status open
 \begin_inset Caption Bicaption
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
-\lang english
 大工logo
 \end_layout
 
@@ -336,11 +354,16 @@ DUT LOGO
 \end_inset
 
 
-\lang chinese-simplified
-LOGO
 \lang english
- of Dalian university of technology
+LOGO of Dalian university of technology
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig1.1"
 
 \end_inset
 
