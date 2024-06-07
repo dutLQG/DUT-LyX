@@ -1,0 +1,769 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[dutthesis]{DUT Thesis Lyx Template}
+# Author : Qigang Liang <lqg@dlut.edu.cn>
+
+Format	66
+
+
+Input stdclass.inc
+Input numreport.inc
+
+
+Style Standard
+ParSkip               0.4
+ParSep                0.4
+Spacing               onehalf
+End
+
+##############################
+Style 前言区声明
+CopyStyle             cover
+Margin                Dynamic
+#LeftMargin            MM
+#RightMargin           MM
+Category              Part
+LatexName             frontmatter
+LatexType             Command
+KeepEmpty             1
+NeedProtect           1
+NextNoIndent          0
+
+LabelType             static
+LabelCounter          part
+LabelString           ".......................................................................................... 前 言 区 .........................................................................................."
+
+BottomSep       4
+TopSep          4
+Font
+Size          large
+Color         blue
+EndFont
+Labelsep              xxx
+ParSkip               0.4
+ParSep                0.8
+Align                 left
+Alignpossible         left
+End
+
+
+Style		原创声明
+Category        FrontMatter
+#CopyStyle 	 author
+LatexType        Command
+LatexName       makeDeclareOriginal
+LabelString      "原创性声明=>"
+Margin		Dynamic
+LabelSep	xxxx
+ParSkip		0.0
+ItemSep		0.2
+TopSep		0.7
+BottomSep	0.7
+ParSep		0.3
+Align		Block
+AlignPossible	Block
+LabelType		Static
+LabelFont
+	 Color		green
+EndFont
+Argument 1
+	Mandatory 1
+	LabelString 	"承诺内容:"
+Font
+Size          normal
+Color         red
+EndFont
+EndArgument
+End
+
+
+
+Style 主体区声明
+CopyStyle             cover
+Margin                Dynamic
+#LeftMargin            MM
+#RightMargin           MM
+Category              Part
+LatexName             mainmatter
+LatexType             Command
+KeepEmpty             1
+NeedProtect           1
+NextNoIndent          0
+
+LabelType             static
+LabelCounter          part
+LabelString           ".......................................................................................... 主 体 区 .........................................................................................."
+
+BottomSep       4
+TopSep          4
+Font
+Size          large
+Color         blue
+EndFont
+Labelsep              xxx
+ParSkip               0.4
+ParSep                0.8
+Align                 left
+Alignpossible         left
+End
+
+Style 后记区声明
+CopyStyle             cover
+Margin                Dynamic
+#LeftMargin            MM
+#RightMargin           MM
+Category              Part
+LatexName             backmatter
+LatexType             Command
+KeepEmpty             1
+NeedProtect           1
+NextNoIndent          1
+
+LabelType             static
+LabelCounter          part
+LabelString           ".......................................................................................... 后 记 区 .........................................................................................."
+
+BottomSep       4
+TopSep          4
+Font
+Size          large
+Color         blue
+EndFont
+Labelsep              xxx
+ParSkip               0.4
+ParSep                0.8
+Align                 left
+Alignpossible         left
+End
+##############################
+Style 中文题目
+Category              FrontMatter
+    CopyStyle       Title
+    LatexType       Command
+    LatexName      title
+    LabelString     "中文题目: "
+    LabelType       Static
+	Font
+	  Color		black
+	Series        bold
+	EndFont
+	LabelFont
+	  Color	      blue
+	Series        bold
+	EndFont
+
+End
+
+Style 英文题目
+Category              FrontMatter
+    CopyStyle       Title
+    LatexType       Command
+    LatexName      englishtitle
+    LabelString     "英文题目: "
+    LabelType       Static
+	Font
+	  Color		black
+	Series        bold
+	Shape		Italic
+	EndFont
+	LabelFont
+	  Color	      blue
+	Series        bold
+	Shape		Italic
+	EndFont
+End
+
+Style 作者
+	LatexType	command
+        CopyStyle       Author
+   	 LatexName       author
+   	 LabelType       Static
+   	 LabelString     "作者姓名:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+
+
+
+Style 学号
+    CopyStyle       Author
+    LatexName       studentnumber
+    LabelType       Static
+    LabelString     "学        号:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+
+Style 导师A
+    CopyStyle       Author
+    LatexName       advisor
+    LabelType       Static
+    LabelString     "指导教师A:"
+	LabelFont
+	  Color		Green
+	EndFont
+
+End
+
+Style 导师B
+    CopyStyle       Author
+    LatexName       advisors
+    LabelType       Static
+    LabelString     "指导教师B:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 专业
+    CopyStyle       Author
+    LatexName      major
+    LabelType       Static
+    LabelString     "学科专业:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 答辩日期
+    CopyStyle       Author
+    LatexName      defenddate
+    LabelType       Static
+    LabelString     "答辩日期:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 学位
+    CopyStyle       Author
+    LatexName      degree
+    LabelType       Static
+    LabelString     "博士｜硕士:"
+	LabelFont
+	  Color		green
+	EndFont
+NextNoIndent          1
+End
+
+##############################
+Style Abstract
+AddToToc	"摘要"
+LabelCounter     FrontMatter
+Margin                Static
+LatexType             Environment
+LatexName             abstract
+Category              FrontMatter
+NextNoIndent          1
+LeftMargin            MMM
+RightMargin           MMM
+ParIndent             MM
+ItemSep               0
+TopSep                0.7
+BottomSep             0.7
+ParSep                0
+Align                 Block
+LabelType             Centered_Top_Environment
+LabelString           "Abstract"
+LabelBottomSep        0.5
+Font
+Size                Small
+EndFont
+LabelFont
+Series              Bold
+Size                Large
+EndFont
+HTMLLabelFirst        1
+HTMLForceCSS          1
+HTMLStyle
+div.abstract {
+margin: 4ex;
+}
+div.abstract_item {
+		font-size: small;
+		padding-top: 1ex;
+}
+div.abstract_label {
+		font-weight: bold;
+}
+EndHTMLStyle
+End
+
+Style			英文摘要
+LabelCounter     FrontMatter
+Category              FrontMatter
+CopyStyle 		Abstract 
+LatexName             englishabstract
+LabelString           " Abstract"
+End
+
+#####################
+InsetLayout Flex:摘要区
+LyXType element
+#  CopyStyle		Flex:摘要区
+  LabelString 		" 摘要区:"
+  LatexType            	 Environment
+  LatexName            	 DUTspecial
+Font
+   Series 	Bold
+EndFont
+LabelFont
+  Shape         Up
+  Color         blue
+EndFont
+Decoration 	   Classic
+NeedProtect           1
+NextNoIndent          1
+End
+
+
+InsetLayout Flex:英文关键词
+LyXType element
+LabelString 	" Keywords:"
+LatexType       Command
+LatexName       englishkeywords
+Decoration 	   Classic
+Font
+   Series 	Bold
+EndFont
+LabelFont
+  Shape         Up
+  Color         blue
+EndFont
+End
+
+InsetLayout Flex:关键词
+  CopyStyle		Flex:英文关键词
+  LabelString 		" 关键词:"
+  LatexType            	 Command
+  LatexName            	 keywords
+End
+
+InsetLayout Flex:目录区
+LyXType element
+  CopyStyle		Flex:摘要区
+  LabelString 		" 目录区:"
+  LatexType            	 Environment
+  LatexName            	 DUTspecial
+End
+
+InsetLayout Flex:符号区
+LyXType element
+  CopyStyle		Flex:摘要区
+  LabelString 		" 符号区:"
+  LatexType            	 Environment
+  LatexName            	 DUTspecial
+End
+
+InsetLayout Flex:正文区
+LyXType element
+  CopyStyle		Flex:摘要区
+  LabelString 		" 正文区:"
+  LatexType            	 Environment
+  LatexName            	 DUTspecial
+End
+
+InsetLayout Flex:文献区
+LyXType element
+  CopyStyle		Flex:摘要区
+  LabelString 		" 文献区:"
+  LatexType            	 Environment
+  LatexName            	 DUTspecial
+End
+
+
+
+InsetLayout Flex:附录区
+LyXType element
+  CopyStyle		Flex:摘要区
+  LabelString 		" 附录区:"
+  LatexType            	 Environment
+  LatexName            	 DUTappendix
+End
+
+
+InsetLayout Flex:盲审区
+LyXType element
+  CopyStyle		Flex:摘要区
+  LabelString 		" 盲审区:"
+  LatexType            	 command
+  LatexName            	 Hide
+End
+
+
+
+
+Style 中文目录
+	LatexType		command
+	LatexName	DUTtableofcontents
+	Category	FrontMatter
+	
+	Argument 1
+		Mandatory 1
+	 	LabelString	"目录名:"
+	EndArgument
+# PassThru	1
+	Margin		Dynamic
+	LabelSep	xx
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Block
+	LabelType	Static
+	LabelString	"插入中文目录=>"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+
+Style 英文目录
+	LatexType		command
+	LatexName	DUTtableofengcontents
+	Category	FrontMatter
+	
+	Argument 1
+		Mandatory 1
+	 	LabelString	"目录名:"
+	EndArgument
+# PassThru	1
+	Margin		Dynamic
+	LabelSep	xx
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Block
+	LabelType	Static
+	LabelString	"插入英文目录=>"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+
+Style 图目录
+	LatexType		command
+	LatexName	DUTlistoffigures
+	Category	FrontMatter
+	
+	Argument 1
+		Mandatory 1
+	 	LabelString	"目录名:"
+	EndArgument
+# PassThru	1
+	Margin		Dynamic
+	LabelSep	xx
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Block
+	LabelType	Static
+	LabelString	"插 入 图 目 录=>"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 表目录
+	LatexType		command
+	LatexName	DUTlistoftables
+	Category	FrontMatter
+	
+	Argument 1
+		Mandatory 1
+	 	LabelString	"目录名:"
+	EndArgument
+# PassThru	1
+	Margin		Dynamic
+	LabelSep	xx
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Block
+	LabelType	Static
+	LabelString	"插 入 表 目 录=>"
+	LabelFont
+	  Color		Green
+	EndFont
+NextNoIndent          1
+End
+
+#####################################
+Style 	定制章
+CopyStyle 		Chapter*
+Align	        	Center
+LatexName       	ChapterCenter
+LabelString           	"定制章"
+End
+#####################################
+Style 	英文章
+CopyStyle 		Chapter*
+Align	        	left
+LatexName       	enChapter
+LabelString           	"eChapter"
+End
+
+Style 	英文章*
+CopyStyle 		Chapter*
+Align	        	Center
+LatexName       	enChapterUnum
+LabelString           	"eChapter*"
+End
+
+Style 	英文节
+CopyStyle 		Section*
+Align	        	left
+LatexName       	enSection
+LabelString           	"eSection"
+End
+
+#Style 	英文节*
+#CopyStyle 		Section*
+#Align	        	left
+#LatexName       	enSectionUnum
+#LabelString           	"eSection*"
+#End
+
+Style 	英文子节
+CopyStyle 		Subsection*
+Align	        	left
+LatexName       	enSubsection
+LabelString           	"eSubsection"
+End
+
+#Style 	英文子节*
+#CopyStyle 		Subsection*
+#Align	        	left
+#LatexName       	enSubsectionUnum
+#LabelString           	"eSubsection*"
+#End
+#####################################
+Style 摘要区
+	LatexType	Environment
+	LatexName	DUTspecial
+	Category 	Part
+	NeedProtect     1
+#	PassThru	1
+	Margin		Static
+	LabelSep	0
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		left
+	AlignPossible	left
+	LabelType	static
+	LabelString	"摘要区:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 目录区
+	LatexType	Environment
+	LatexName	DUTspecial
+	Category 	Part
+	NeedProtect     1
+#	PassThru	1
+	Margin		Static
+	LabelSep	0
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		left
+	AlignPossible	left
+	LabelType	static
+	LabelString	"目录区:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 符号区
+	LatexType	Environment
+	LatexName	DUTspecial
+	Category 	Part
+	NeedProtect     1
+#	PassThru	1
+	Margin		Static
+	LabelSep	0
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		left
+	AlignPossible	left
+	LabelType	static
+	LabelString	"符号区:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+
+
+Style 正文区
+	LatexType	Environment
+	LatexName	DUTspecial
+	Category 	Part
+	NeedProtect     1
+#	PassThru	1
+	Margin		Static
+	LabelSep	0
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		left
+	AlignPossible	left
+	LabelType	static
+	LabelString	"正文区:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 文献区
+	LatexType	Environment
+	LatexName	DUTspecial
+	Category 	Part
+	NeedProtect     1
+#	PassThru	1
+	Margin		Static
+	LabelSep	0
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		left
+	AlignPossible	left
+	LabelType	static
+	LabelString	"文献区:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+Style 附录区
+	LatexType	Environment
+	LatexName	DUTappendix
+	Category 	Part
+	NeedProtect     1
+#	PassThru	1
+	Margin		Static
+	LabelSep	0
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		left
+	AlignPossible	left
+	LabelType	static
+	LabelString	"附录区:"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+
+
+#####################################
+
+
+
+# Custom Inset Layout
+InsetLayout Flex:定制超链接
+#LyXType         custom
+LyXType         element
+LabelString 	超链接
+LatexType       Command
+LatexName       href
+Decoration 	   Classic
+Argument 1
+	Mandatory 1
+	LabelString 	"Link"
+	LabelFont
+  		Shape         Up
+  		Color         blue
+	EndFont
+EndArgument
+End
+
+
+#####################################
+
+Style 盲审区
+	LatexType	command
+	LatexName	Hide
+	Category 	Part
+	NeedProtect     1
+	Argument 1
+	Mandatory 1
+	 LabelString	"成果、致谢、作者简介"
+	 Tooltip	"将不参与外审的相关章节子文档逐个插入"
+	EndArgument
+#	PassThru	1
+	Margin		Dynamic
+	LabelSep	xx
+	ParSkip		0.0
+	ItemSep		0.2
+	TopSep		0.7
+	BottomSep	0.7
+	ParSep		0.3
+	Align		Block
+	AlignPossible	Block
+	LabelType		Static
+	LabelString	"盲审区=>"
+	LabelFont
+	  Color		Green
+	EndFont
+End
+
+#####################################
+# delete style
+NoStyle Part
+NoStyle Part*
+NoStyle Bibliography
+NoStyle Date
+NoStyle Address
+NoStyle Right_Address
+NoStyle Cover
+NoStyle Author
+NoStyle Title
+NoStyle FrontMatter
+NoStyle TocNames
+NoStyle Verbatim
+NoStyle Verbatim*
+NoStyle verse
+NoStyle 摘要区
+NoStyle 摘要
+NoStyle 英文摘要
+NoStyle 符号区
+NoStyle 目录区
+NoStyle 正文区
+NoStyle 文献区
+NoStyle 附录区
+NoStyle 盲审区
+NoStyle abstract
